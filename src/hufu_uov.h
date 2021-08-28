@@ -1,14 +1,9 @@
 #ifndef HUFU_UOV_H
 #define HUFU_UOV_H
 
-void TEST();
-
-
 int hufu_uov_keypair(unsigned char *pk, unsigned char *sk);
 int hufu_uov_sign(const unsigned char *sk, unsigned char *docHash, unsigned char *sign); 
 int hufu_uov_verify(const unsigned char *pk, unsigned char *sign, unsigned char *docHash);
-int hufu_uov_verify_t(const unsigned char *pk, const unsigned char *sk, unsigned char *sign, unsigned char *docHash);
-
 
 int crypto_sign_keypair(unsigned char *pk, unsigned char *sk);
 int crypto_sign(unsigned char *sm, unsigned long long *smlen,
