@@ -2,7 +2,7 @@
 //  PQCgenKAT_sign.c
 //
 //  Created by Bassham, Lawrence E (Fed) on 8/29/17.
-//  Copyright Â© 2017 Bassham, Lawrence E (Fed). All rights reserved.
+//  Copyright © 2017 Bassham, Lawrence E (Fed). All rights reserved.
 //
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,6 +10,7 @@
 #include <ctype.h>
 #include "rng.h"
 #include "hufu_uov.h"
+#include "hufu_uov_parameter.h"
 
 #define	MAX_MARKER_LEN		50
 
@@ -264,4 +265,3 @@ fprintBstr(FILE *fp, char *S, unsigned char *A, unsigned long long L)
 
 	fprintf(fp, "\n");
 }
-
